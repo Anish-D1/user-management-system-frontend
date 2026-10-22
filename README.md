@@ -2,6 +2,10 @@
 
 A full-stack User Management System built with **React, Java Spring Boot, and MySQL**. This project demonstrates frontend development, REST API integration, CRUD operations, data validation, and deployment.
 
+## 📸 Project Preview
+
+![User Management System Dashboard](public/user-management-dashboard.png)
+
 ## 🚀 Live Demo
 
 **[Open the Live Application](https://user-management-system-frontend-swart.vercel.app/)**
