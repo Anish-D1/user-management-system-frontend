@@ -99,8 +99,12 @@ function App() {
       .catch((error) => {
         setMessage("");
 
-        if (error.response) {
+        if (error.response?.status === 409) {
+          setMessage("Email already exists. Please use a different email.");
+        } else if (error.response?.status === 400) {
           setErrors(error.response.data);
+        } else if (error.response) {
+          setMessage("Something went wrong. Please try again.");
         } else {
           setMessage("Unable to connect to server");
         }
